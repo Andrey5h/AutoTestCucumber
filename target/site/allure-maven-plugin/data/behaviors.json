@@ -10,7 +10,7 @@
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "aa8f1b1a973841d6",
+      "uid" : "11cffe6e2180d02e",
       "title" : "Without story",
       "statistic" : {
         "total" : 2,
@@ -21,24 +21,24 @@
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "f95fb75fd45699b7",
+        "uid" : "85c82546d0915aa4",
         "name" : "newAutoTest",
         "title" : "New auto test",
         "time" : {
-          "start" : 1517132602408,
-          "stop" : 1517132602424,
-          "duration" : 16
+          "start" : 1517148004110,
+          "stop" : 1517148004110,
+          "duration" : 0
         },
         "severity" : "NORMAL",
         "status" : "PENDING"
       }, {
-        "uid" : "2ddfb4a33b693854",
+        "uid" : "c5368e402836f19b",
         "name" : "testTravelInsurance",
         "title" : "Страхование путешественников",
         "time" : {
-          "start" : 1517132607311,
-          "stop" : 1517132615313,
-          "duration" : 8002
+          "start" : 1517148008464,
+          "stop" : 1517148017433,
+          "duration" : 8969
         },
         "severity" : "NORMAL",
         "status" : "PASSED"

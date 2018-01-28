@@ -1,11 +1,11 @@
 {
-  "uid" : "f95fb75fd45699b7",
+  "uid" : "85c82546d0915aa4",
   "name" : "newAutoTest",
   "title" : "New auto test",
   "time" : {
-    "start" : 1517132602408,
-    "stop" : 1517132602424,
-    "duration" : 16
+    "start" : 1517148004110,
+    "stop" : 1517148004110,
+    "duration" : 0
   },
   "summary" : {
     "attachments" : 0,
@@ -19,7 +19,7 @@
   "severity" : "NORMAL",
   "status" : "PENDING",
   "suite" : {
-    "uid" : "21ef965788321e81",
+    "uid" : "400cdcea98852cc",
     "name" : "MyRefactoringTest",
     "title" : "My refactoring test"
   },
@@ -37,14 +37,14 @@
     "name" : "host",
     "value" : "DESKTOP-DLBNCAD"
   }, {
+    "name" : "thread",
+    "value" : "7084@DESKTOP-DLBNCAD.main(1)"
+  }, {
     "name" : "suite-title",
     "value" : null
   }, {
     "name" : "suite-name",
     "value" : "MyRefactoringTest"
-  }, {
-    "name" : "thread",
-    "value" : "7824@DESKTOP-DLBNCAD.main(1)"
   } ],
   "parameters" : [ ]
 }

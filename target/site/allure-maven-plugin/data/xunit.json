@@ -1,17 +1,17 @@
 {
   "time" : {
-    "start" : 1517132602408,
-    "stop" : 1517132615313,
-    "duration" : 12905
+    "start" : 1517148004110,
+    "stop" : 1517148017433,
+    "duration" : 13323
   },
   "testSuites" : [ {
-    "uid" : "21ef965788321e81",
+    "uid" : "400cdcea98852cc",
     "name" : "MyRefactoringTest",
     "title" : "My refactoring test",
     "time" : {
-      "start" : 1517132602408,
-      "stop" : 1517132602424,
-      "duration" : 16
+      "start" : 1517148004110,
+      "stop" : 1517148004110,
+      "duration" : 0
     },
     "statistic" : {
       "total" : 1,
@@ -23,25 +23,25 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "f95fb75fd45699b7",
+      "uid" : "85c82546d0915aa4",
       "name" : "newAutoTest",
       "title" : "New auto test",
       "time" : {
-        "start" : 1517132602408,
-        "stop" : 1517132602424,
-        "duration" : 16
+        "start" : 1517148004110,
+        "stop" : 1517148004110,
+        "duration" : 0
       },
       "severity" : "NORMAL",
       "status" : "PENDING"
     } ]
   }, {
-    "uid" : "e74ec0453146df70",
+    "uid" : "6ed29298946b8616",
     "name" : "TestForAllureReport",
     "title" : "Test for allure report",
     "time" : {
-      "start" : 1517132607311,
-      "stop" : 1517132615313,
-      "duration" : 8002
+      "start" : 1517148008464,
+      "stop" : 1517148017433,
+      "duration" : 8969
     },
     "statistic" : {
       "total" : 1,
@@ -53,13 +53,13 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "2ddfb4a33b693854",
+      "uid" : "c5368e402836f19b",
       "name" : "testTravelInsurance",
       "title" : "Страхование путешественников",
       "time" : {
-        "start" : 1517132607311,
-        "stop" : 1517132615313,
-        "duration" : 8002
+        "start" : 1517148008464,
+        "stop" : 1517148017433,
+        "duration" : 8969
       },
       "severity" : "NORMAL",
       "status" : "PASSED"

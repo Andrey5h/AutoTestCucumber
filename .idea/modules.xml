@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AutoTest.iml" filepath="$PROJECT_DIR$/AutoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutoTestCucumber.iml" filepath="$PROJECT_DIR$/AutoTestCucumber.iml" />
     </modules>
   </component>
 </project>
