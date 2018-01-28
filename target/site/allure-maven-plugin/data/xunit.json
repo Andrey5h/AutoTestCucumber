@@ -1,0 +1,68 @@
+{
+  "time" : {
+    "start" : 1517132602408,
+    "stop" : 1517132615313,
+    "duration" : 12905
+  },
+  "testSuites" : [ {
+    "uid" : "21ef965788321e81",
+    "name" : "MyRefactoringTest",
+    "title" : "My refactoring test",
+    "time" : {
+      "start" : 1517132602408,
+      "stop" : 1517132602424,
+      "duration" : 16
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 1,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "f95fb75fd45699b7",
+      "name" : "newAutoTest",
+      "title" : "New auto test",
+      "time" : {
+        "start" : 1517132602408,
+        "stop" : 1517132602424,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    } ]
+  }, {
+    "uid" : "e74ec0453146df70",
+    "name" : "TestForAllureReport",
+    "title" : "Test for allure report",
+    "time" : {
+      "start" : 1517132607311,
+      "stop" : 1517132615313,
+      "duration" : 8002
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "2ddfb4a33b693854",
+      "name" : "testTravelInsurance",
+      "title" : "Страхование путешественников",
+      "time" : {
+        "start" : 1517132607311,
+        "stop" : 1517132615313,
+        "duration" : 8002
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}
