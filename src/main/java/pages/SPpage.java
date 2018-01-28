@@ -14,37 +14,39 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseSteps;
 
-public class SPpage extends BasePage {
+public class SPpage {
 
     @FindBy (xpath = "//a//img[contains(@src,'banner-zashita-traveler')]")
 
     public WebElement sendButton;
 
 
-    public SPpage (WebDriver driver){
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public SPpage (){
+        PageFactory.initElements(BaseSteps.getDriver(), this);
+
     }
 
-    public void switchWindows(){
-        for (String winHandle : driver.getWindowHandles()) {
 
-            driver.switchTo().window(winHandle);
+    public void switchWindows(){
+        for (String winHandle : BaseSteps.getDriver().getWindowHandles()) {
+
+            BaseSteps.getDriver().switchTo().window(winHandle);
         }
     }
     public void waitElementToBeClickable(){
-        Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
+        Wait<WebDriver> wait = new WebDriverWait(BaseSteps.getDriver(), 5, 1000);
         wait.until(ExpectedConditions.visibilityOf(
-                driver.findElement(By.xpath("//*[contains(text(),\"Минимальная\")]")))).click();
+                BaseSteps.getDriver().findElement(By.xpath("//*[contains(text(),\"Минимальная\")]")))).click();
     }
 
     public void clickButton(){
-        driver.findElement(By.xpath("//SPAN[@ng-click='save()'][text()='Оформить']")).click();
+        BaseSteps.getDriver().findElement(By.xpath("//SPAN[@ng-click='save()'][text()='Оформить']")).click();
     }
 
     public void checkTitle (){
-        Assert.assertTrue(driver.findElement(By.cssSelector("div[class='sbrf-rich-outer']")).getText().contains("Страхование путешественников"));
+        Assert.assertTrue(BaseSteps.getDriver().findElement(By.cssSelector("div[class='sbrf-rich-outer']")).getText().contains("Страхование путешественников"));
     }
 
 }

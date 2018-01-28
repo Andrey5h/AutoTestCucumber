@@ -1,0 +1,371 @@
+{
+  "uid" : "58d880b235044701",
+  "name" : "Заявка на оформление полиса Страхование Путешественника",
+  "title" : "Заявка на оформление полиса Страхование Путешественника",
+  "time" : {
+    "start" : 1517163536643,
+    "stop" : 1517163549603,
+    "duration" : 12960
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 21
+  },
+  "failure" : null,
+  "description" : {
+    "value" : null,
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "4e4fb77106408721",
+    "name" : "Страхование",
+    "title" : "Страхование"
+  },
+  "steps" : [ {
+    "name" : "Когда Осуществлен переход на страницу сбербанка",
+    "title" : "Когда Осуществлен переход на страницу сбербанка",
+    "time" : {
+      "start" : 1517163540704,
+      "stop" : 1517163543347,
+      "duration" : 2643
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Когда Выбран пунк меню \"Застраховать себя\"",
+    "title" : "Когда Выбран пунк меню \"Застраховать себя\"",
+    "time" : {
+      "start" : 1517163543348,
+      "stop" : 1517163543673,
+      "duration" : 325
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 1
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "stepSelectMainMenu[Застраховать себя]",
+      "title" : "Выбран пунк меню Застраховать себя",
+      "time" : {
+        "start" : 1517163543385,
+        "stop" : 1517163543672,
+        "duration" : 287
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "Когда Выбран пунк меню - \"Страхование путешественников\"",
+    "title" : "Когда Выбран пунк меню - \"Страхование путешественников\"",
+    "time" : {
+      "start" : 1517163543673,
+      "stop" : 1517163546424,
+      "duration" : 2751
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 1
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "stepSelectSubMenu[Страхование путешественников]",
+      "title" : "Выбран пунк меню Страхование путешественников]",
+      "time" : {
+        "start" : 1517163544727,
+        "stop" : 1517163546424,
+        "duration" : 1697
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "Когда Выполнена проверка текстовки Страхование путешественников на странице SP",
+    "title" : "Когда Выполнена проверка текстовки Страхование путешественников на странице SP",
+    "time" : {
+      "start" : 1517163546424,
+      "stop" : 1517163546624,
+      "duration" : 200
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Когда Выполнено нажатие на кнопку - оформить онлайн",
+    "title" : "Когда Выполнено нажатие на кнопку - оформить онлайн",
+    "time" : {
+      "start" : 1517163546624,
+      "stop" : 1517163546765,
+      "duration" : 141
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Тогда Выполнен переход на страницу выбора полиса",
+    "title" : "Тогда Выполнен переход на страницу выбора полиса",
+    "time" : {
+      "start" : 1517163546765,
+      "stop" : 1517163546800,
+      "duration" : 35
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Когда Выполнено нажатие на поле 'выберите сумму страховой защиты' - Минимальная",
+    "title" : "Когда Выполнено нажатие на поле 'выберите сумму страховой защиты' - Минимальная",
+    "time" : {
+      "start" : 1517163546800,
+      "stop" : 1517163547947,
+      "duration" : 1147
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Когда Выполнено нажатие на кнопку Продолжить",
+    "title" : "Когда Выполнено нажатие на кнопку Продолжить",
+    "time" : {
+      "start" : 1517163547947,
+      "stop" : 1517163548095,
+      "duration" : 148
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Когда заполняются поля:",
+    "title" : "Когда заполняются поля:",
+    "time" : {
+      "start" : 1517163548095,
+      "stop" : 1517163548631,
+      "duration" : 536
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 7
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "stepFillField[Фамилия, Иванов]",
+      "title" : "Поле Фамилия заполняется значенем Иванов",
+      "time" : {
+        "start" : 1517163548098,
+        "stop" : 1517163548202,
+        "duration" : 104
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Имя, Иван]",
+      "title" : "Поле Имя заполняется значенем Иван",
+      "time" : {
+        "start" : 1517163548203,
+        "stop" : 1517163548261,
+        "duration" : 58
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Отчество, Иванович]",
+      "title" : "Поле Отчество заполняется значенем Иванович",
+      "time" : {
+        "start" : 1517163548261,
+        "stop" : 1517163548329,
+        "duration" : 68
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Фамилия2, Ivanov]",
+      "title" : "Поле Фамилия2 заполняется значенем Ivanov",
+      "time" : {
+        "start" : 1517163548330,
+        "stop" : 1517163548390,
+        "duration" : 60
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Имя2, Ivan]",
+      "title" : "Поле Имя2 заполняется значенем Ivan",
+      "time" : {
+        "start" : 1517163548391,
+        "stop" : 1517163548450,
+        "duration" : 59
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Дата рождения, 01.01.1990]",
+      "title" : "Поле Дата рождения заполняется значенем 01.01.1990",
+      "time" : {
+        "start" : 1517163548450,
+        "stop" : 1517163548544,
+        "duration" : 94
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Дата рождения2, 01.01.1990]",
+      "title" : "Поле Дата рождения2 заполняется значенем 01.01.1990",
+      "time" : {
+        "start" : 1517163548544,
+        "stop" : 1517163548631,
+        "duration" : 87
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "Тогда Поля заполнены!",
+    "title" : "Тогда Поля заполнены!",
+    "time" : {
+      "start" : 1517163548631,
+      "stop" : 1517163548697,
+      "duration" : 66
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Когда Выполнено нажатие на кнопку - Продолжить",
+    "title" : "Когда Выполнено нажатие на кнопку - Продолжить",
+    "time" : {
+      "start" : 1517163548697,
+      "stop" : 1517163548758,
+      "duration" : 61
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Тогда Проверка появления текста Заполнены не все обязательные поля",
+    "title" : "Тогда Проверка появления текста Заполнены не все обязательные поля",
+    "time" : {
+      "start" : 1517163548758,
+      "stop" : 1517163548786,
+      "duration" : 28
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Страхование"
+  }, {
+    "name" : "suite-name",
+    "value" : "Страхование"
+  }, {
+    "name" : "story",
+    "value" : "Заявка на оформление полиса Страхование Путешественника"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-DLBNCAD"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "framework",
+    "value" : "CucumberJVM"
+  }, {
+    "name" : "thread",
+    "value" : "9520@DESKTOP-DLBNCAD.main(1)"
+  } ],
+  "parameters" : [ ]
+}

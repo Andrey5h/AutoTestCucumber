@@ -1,47 +1,17 @@
 {
   "time" : {
-    "start" : 1517148004110,
-    "stop" : 1517148017433,
-    "duration" : 13323
+    "start" : 1517163536643,
+    "stop" : 1517163549603,
+    "duration" : 12960
   },
   "testSuites" : [ {
-    "uid" : "400cdcea98852cc",
-    "name" : "MyRefactoringTest",
-    "title" : "My refactoring test",
+    "uid" : "4e4fb77106408721",
+    "name" : "Страхование",
+    "title" : "Страхование",
     "time" : {
-      "start" : 1517148004110,
-      "stop" : 1517148004110,
-      "duration" : 0
-    },
-    "statistic" : {
-      "total" : 1,
-      "passed" : 0,
-      "pending" : 1,
-      "canceled" : 0,
-      "failed" : 0,
-      "broken" : 0
-    },
-    "description" : null,
-    "testCases" : [ {
-      "uid" : "85c82546d0915aa4",
-      "name" : "newAutoTest",
-      "title" : "New auto test",
-      "time" : {
-        "start" : 1517148004110,
-        "stop" : 1517148004110,
-        "duration" : 0
-      },
-      "severity" : "NORMAL",
-      "status" : "PENDING"
-    } ]
-  }, {
-    "uid" : "6ed29298946b8616",
-    "name" : "TestForAllureReport",
-    "title" : "Test for allure report",
-    "time" : {
-      "start" : 1517148008464,
-      "stop" : 1517148017433,
-      "duration" : 8969
+      "start" : 1517163536643,
+      "stop" : 1517163549603,
+      "duration" : 12960
     },
     "statistic" : {
       "total" : 1,
@@ -53,13 +23,13 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "c5368e402836f19b",
-      "name" : "testTravelInsurance",
-      "title" : "Страхование путешественников",
+      "uid" : "58d880b235044701",
+      "name" : "Заявка на оформление полиса Страхование Путешественника",
+      "title" : "Заявка на оформление полиса Страхование Путешественника",
       "time" : {
-        "start" : 1517148008464,
-        "stop" : 1517148017433,
-        "duration" : 8969
+        "start" : 1517163536643,
+        "stop" : 1517163549603,
+        "duration" : 12960
       },
       "severity" : "NORMAL",
       "status" : "PASSED"

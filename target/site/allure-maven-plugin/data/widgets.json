@@ -3,17 +3,17 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 2,
+        "total" : 1,
         "passed" : 1,
-        "pending" : 1,
+        "pending" : 0,
         "canceled" : 0,
         "failed" : 0,
         "broken" : 0
       },
       "time" : {
-        "start" : 1517148004110,
-        "stop" : 1517148017433,
-        "duration" : 13323
+        "start" : 1517163536643,
+        "stop" : 1517163549603,
+        "duration" : 12960
       }
     },
     "defects" : {
@@ -21,21 +21,10 @@
       "items" : [ ]
     },
     "xunit" : {
-      "totalCount" : 2,
+      "totalCount" : 1,
       "items" : [ {
-        "uid" : "400cdcea98852cc",
-        "title" : "My refactoring test",
-        "statistic" : {
-          "total" : 1,
-          "passed" : 0,
-          "pending" : 1,
-          "canceled" : 0,
-          "failed" : 0,
-          "broken" : 0
-        }
-      }, {
-        "uid" : "6ed29298946b8616",
-        "title" : "Test for allure report",
+        "uid" : "4e4fb77106408721",
+        "title" : "Страхование",
         "statistic" : {
           "total" : 1,
           "passed" : 1,
@@ -49,11 +38,11 @@
     "behaviors" : {
       "totalCount" : 1,
       "items" : [ {
-        "title" : "Without feature",
+        "title" : "Страхование",
         "statistic" : {
-          "total" : 2,
+          "total" : 1,
           "passed" : 1,
-          "pending" : 1,
+          "pending" : 0,
           "canceled" : 0,
           "failed" : 0,
           "broken" : 0

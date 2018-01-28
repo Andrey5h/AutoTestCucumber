@@ -10,10 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseSteps;
 
 import static org.junit.Assert.assertEquals;
 
-public class SendAppPage extends BasePage {
+public class SendAppPage {
 
     @FindBy(name = "insured0_surname")
     WebElement insured_surname;
@@ -39,9 +40,13 @@ public class SendAppPage extends BasePage {
     @FindBy (xpath = "//SPAN[@ng-click='save()'][text()='Продолжить']")
     public WebElement sendButton;
 
-    public SendAppPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public SendAppPage() {
+        PageFactory.initElements( BaseSteps.getDriver(), this);
+    }
+
+    public void fillField(WebElement element, String value) {
+        element.clear();
+        element.sendKeys(value);
     }
 
     public void fillField(String fieldName, String value){
@@ -72,16 +77,16 @@ public class SendAppPage extends BasePage {
     }
 
     public void checkFields(){
-        assertEquals("Ivanov", driver.findElement(By.name("insured0_surname")).getAttribute("value"));
-        assertEquals("Ivan", driver.findElement(By.name("insured0_name")).getAttribute("value"));
-        assertEquals("01.01.1990", driver.findElement(By.name("insured0_birthDate")).getAttribute("value"));
-        assertEquals("Иванов", driver.findElement(By.name("surname")).getAttribute("value"));
-        assertEquals("Иванович", driver.findElement(By.name("middlename")).getAttribute("value"));
-        assertEquals("Иван", driver.findElement(By.name("name")).getAttribute("value"));
-        assertEquals("01.01.1990", driver.findElement(By.name("birthDate")).getAttribute("value"));
+        assertEquals("Ivanov", BaseSteps.getDriver().findElement(By.name("insured0_surname")).getAttribute("value"));
+        assertEquals("Ivan", BaseSteps.getDriver().findElement(By.name("insured0_name")).getAttribute("value"));
+        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("insured0_birthDate")).getAttribute("value"));
+        assertEquals("Иванов", BaseSteps.getDriver().findElement(By.name("surname")).getAttribute("value"));
+        assertEquals("Иванович", BaseSteps.getDriver().findElement(By.name("middlename")).getAttribute("value"));
+        assertEquals("Иван", BaseSteps.getDriver().findElement(By.name("name")).getAttribute("value"));
+        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("birthDate")).getAttribute("value"));
     }
     public void checkError(){
-        assertEquals("Заполнены не все обязательные поля", driver.findElement(By.xpath("//DIV[@ng-show='tryNext && myForm.$invalid'][text()='Заполнены не все обязательные поля']")).getText());
+        assertEquals("Заполнены не все обязательные поля", BaseSteps.getDriver().findElement(By.xpath("//DIV[@ng-show='tryNext && myForm.$invalid'][text()='Заполнены не все обязательные поля']")).getText());
     }
 
 

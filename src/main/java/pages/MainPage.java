@@ -13,9 +13,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseSteps;
 
 
-public class MainPage extends BasePage{
+public class MainPage {
 
 
 
@@ -23,9 +24,9 @@ public class MainPage extends BasePage{
     WebElement mainMenu;
 
 
-    public MainPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public MainPage() {
+        PageFactory.initElements( BaseSteps.getDriver(), this);
+
     }
 
     public void selectMainMenu(String menuItem){
@@ -37,8 +38,8 @@ public class MainPage extends BasePage{
     }
 
     public void waitVisibilityOfelement(){
-        Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
+        Wait<WebDriver> wait = new WebDriverWait(BaseSteps.getDriver(), 5, 1000);
         wait.until(ExpectedConditions.visibilityOf(
-                driver.findElement(By.xpath("//div[contains(@class,'bp-area header-container')]//a[contains(text(),'Страхование путешественников')]"))));
+                BaseSteps.getDriver().findElement(By.xpath("//div[contains(@class,'bp-area header-container')]//a[contains(text(),'Страхование путешественников')]"))));
     }
 }

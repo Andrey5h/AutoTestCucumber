@@ -1,44 +1,33 @@
 {
   "features" : [ {
-    "title" : "Without feature",
+    "title" : "Страхование",
     "statistic" : {
-      "total" : 2,
+      "total" : 1,
       "passed" : 1,
-      "pending" : 1,
+      "pending" : 0,
       "canceled" : 0,
       "failed" : 0,
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "11cffe6e2180d02e",
-      "title" : "Without story",
+      "uid" : "f435cefd03aa6935",
+      "title" : "Заявка на оформление полиса Страхование Путешественника",
       "statistic" : {
-        "total" : 2,
+        "total" : 1,
         "passed" : 1,
-        "pending" : 1,
+        "pending" : 0,
         "canceled" : 0,
         "failed" : 0,
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "85c82546d0915aa4",
-        "name" : "newAutoTest",
-        "title" : "New auto test",
+        "uid" : "58d880b235044701",
+        "name" : "Заявка на оформление полиса Страхование Путешественника",
+        "title" : "Заявка на оформление полиса Страхование Путешественника",
         "time" : {
-          "start" : 1517148004110,
-          "stop" : 1517148004110,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "PENDING"
-      }, {
-        "uid" : "c5368e402836f19b",
-        "name" : "testTravelInsurance",
-        "title" : "Страхование путешественников",
-        "time" : {
-          "start" : 1517148008464,
-          "stop" : 1517148017433,
-          "duration" : 8969
+          "start" : 1517163536643,
+          "stop" : 1517163549603,
+          "duration" : 12960
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
