@@ -2,15 +2,15 @@
   "hosts" : [ {
     "title" : "DESKTOP-DLBNCAD",
     "threads" : [ {
-      "title" : "9520@DESKTOP-DLBNCAD.main(1)",
+      "title" : "6128@DESKTOP-DLBNCAD.main(1)",
       "testCases" : [ {
-        "uid" : "58d880b235044701",
+        "uid" : "8f8c497c86bf931f",
         "name" : "Заявка на оформление полиса Страхование Путешественника",
         "title" : "Заявка на оформление полиса Страхование Путешественника",
         "time" : {
-          "start" : 1517163536643,
-          "stop" : 1517163549603,
-          "duration" : 12960
+          "start" : 1517341474943,
+          "stop" : 1517341487547,
+          "duration" : 12604
         },
         "severity" : "NORMAL",
         "status" : "PASSED"

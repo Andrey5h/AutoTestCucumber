@@ -25,7 +25,6 @@ import static steps.BaseSteps.baseUrl;
 public class ScenarioSteps {
 
     MainSteps mainSteps = new MainSteps();
-    SPSteps spSteps = new SPSteps();
     SendAppSteps sendAppSteps = new SendAppSteps();
     MainPage mainPage = new MainPage();
     SPpage sPpage = new SPpage();
@@ -80,17 +79,11 @@ public class ScenarioSteps {
                 (key, value) -> sendAppSteps.stepFillField( key, value ) );
     }
 
-    @Then( "Поля заполнены!" )
-    public void stepCheckFillFields(){
-        assertEquals("Ivanov", BaseSteps.getDriver().findElement(By.name("insured0_surname")).getAttribute("value"));
-        assertEquals("Ivan", BaseSteps.getDriver().findElement(By.name("insured0_name")).getAttribute("value"));
-        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("insured0_birthDate")).getAttribute("value"));
-        assertEquals("Иванов", BaseSteps.getDriver().findElement(By.name("surname")).getAttribute("value"));
-        assertEquals("Иванович", BaseSteps.getDriver().findElement(By.name("middlename")).getAttribute("value"));
-        assertEquals("Иван", BaseSteps.getDriver().findElement(By.name("name")).getAttribute("value"));
-        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("birthDate")).getAttribute("value"));
+    @Then("^значения полей равны:$")
+    public void checkFillForm(DataTable fields){
+        fields.asMap(String.class, String.class)
+                .forEach((field, value) -> sendAppSteps.stepCheckFillField(field, value));
     }
-
 
     @When("Выполнено нажатие на кнопку - Продолжить")
     public void stepSendAppButton() {

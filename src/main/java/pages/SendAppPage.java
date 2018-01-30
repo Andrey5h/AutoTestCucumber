@@ -76,15 +76,26 @@ public class SendAppPage {
         }
     }
 
-    public void checkFields(){
-        assertEquals("Ivanov", BaseSteps.getDriver().findElement(By.name("insured0_surname")).getAttribute("value"));
-        assertEquals("Ivan", BaseSteps.getDriver().findElement(By.name("insured0_name")).getAttribute("value"));
-        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("insured0_birthDate")).getAttribute("value"));
-        assertEquals("Иванов", BaseSteps.getDriver().findElement(By.name("surname")).getAttribute("value"));
-        assertEquals("Иванович", BaseSteps.getDriver().findElement(By.name("middlename")).getAttribute("value"));
-        assertEquals("Иван", BaseSteps.getDriver().findElement(By.name("name")).getAttribute("value"));
-        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("birthDate")).getAttribute("value"));
+    public String getFillField(String fieldName){
+        switch (fieldName){
+            case  "Фамилия":
+                return surname.getAttribute("value");
+            case  "Имя":
+                return name.getAttribute("value");
+            case  "Отчество":
+                return middlename.getAttribute("value");
+            case  "Фамилия2":
+                return insured_surname.getAttribute("value");
+            case  "Имя2":
+                return insured_name.getAttribute("value");
+            case  "Дата рождения":
+                return insured_birthDate.getAttribute("value");
+            case  "Дата рождения2":
+                return birthDate.getAttribute("value");
+        }
+        throw new AssertionError("Поле не объявлено на странице");
     }
+
     public void checkError(){
         assertEquals("Заполнены не все обязательные поля", BaseSteps.getDriver().findElement(By.xpath("//DIV[@ng-show='tryNext && myForm.$invalid'][text()='Заполнены не все обязательные поля']")).getText());
     }

@@ -12,6 +12,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class SendAppSteps {
 
@@ -25,15 +26,17 @@ public class SendAppSteps {
         fields.forEach(this::stepFillField);
     }
 
-    @Step("Поля заполнены!")
-    public void stepCheckFields() {
-        assertEquals("Ivanov", BaseSteps.getDriver().findElement(By.name("insured0_surname")).getAttribute("value"));
-        assertEquals("Ivan", BaseSteps.getDriver().findElement(By.name("insured0_name")).getAttribute("value"));
-        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("insured0_birthDate")).getAttribute("value"));
-        assertEquals("Иванов", BaseSteps.getDriver().findElement(By.name("surname")).getAttribute("value"));
-        assertEquals("Иванович", BaseSteps.getDriver().findElement(By.name("middlename")).getAttribute("value"));
-        assertEquals("Иван", BaseSteps.getDriver().findElement(By.name("name")).getAttribute("value"));
-        assertEquals("01.01.1990", BaseSteps.getDriver().findElement(By.name("birthDate")).getAttribute("value"));
+
+    @Step("поле {0} заполнено значением {1}")
+    public void stepCheckFillField(String field, String value){
+        String actual = new SendAppPage().getFillField(field);
+        assertTrue(String.format("Значение поля [%s] равно [%s]. Ожидалось - [%s]", field, actual, value),
+                actual.equals(value));
+    }
+
+    @Step("поля заполнены верно")
+    public void stepCheckFillFields(HashMap<String, String> fields){
+        fields.forEach((k, v)-> stepCheckFillField(k,v));
     }
 
     @Step ("Проверка появления текста Заполнены не все обязательные поля")
